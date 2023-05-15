@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript notes</title>
+</head>
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">JAVASCRIPT NOTES</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link text-white" href="">Link</a> -->
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Chapters
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#chapter1">Chapter 1</a></li>
+                  <li><a class="dropdown-item" href="#chapter2">Chapter 2</a></li>
+                  <li><a class="dropdown-item" href="#chapter3">Chapter 3</a></li>
+                  <li><a class="dropdown-item" href="#chapter4">Chapter 4</a></li>
+                  <li><a class="dropdown-item" href="#chapter5">Chapter 5</a></li>
+                  <li><a class="dropdown-item" href="#chapter6">Chapter 6</a></li>
+                  <li><a class="dropdown-item" href="#chapter7">Chapter 7</a></li>
+                  <li><a class="dropdown-item" href="#chapter8">Chapter 8</a></li>
+                  <li><a class="dropdown-item" href="#chapter9">Chapter 9</a></li>
+                  <li><a class="dropdown-item" href="#chapter10">Chapter 10</a></li>
+                  <li><a class="dropdown-item" href="#chapter11">Chapter 11</a></li>
+                  <li><a class="dropdown-item" href="#chapter12">Chapter 12</a></li>
+                  <li><a class="dropdown-item" href="#chapter13">Chapter 13</a></li>
+                  <li><a class="dropdown-item" href="#chapter14">Chapter 14</a></li>
+                  <li><a class="dropdown-item" href="#chapter15">Chapter 15</a></li>
+                  <li><a class="dropdown-item" href="#chapter16">Chapter 16</a></li>
+                  <li><a class="dropdown-item" href="#chapter17">Chapter 17</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="introductionhome" class="border rounded border-info">
+      <h2 >Introduction to programming</h2>
+      <p>programming is a way to talk to computers. <br> A language like Hindi, English or Bengali can be used to talk to a human but for computers we need straight forward instruction.</p>
+      <h3>Computer is DUMB!</h3>
+      <p>when was the last time you ordered some cereal and got DVDs of serial ! <br> Programming is the act of constructing a program, a set of precise instructions telling a computer what to do.</p>
+        <h3>What is ECMA script</h3>
+        <P>ECMA script can almost/ always be used interchangably Javascript is very liberal in what it allows</P>
+        <h3>How to excute javascript</h3>
+        <p>javascipt can be executed right inside one's browser. You can open the javascipt console and start writing javascipt there</p>
+        <p>Another way to execute runtime like node.js which can be installed and used to run javascript code</p>
+        <p>Yet another way to execute javascipt is by inserting it inside scirpt tag of an HTML document</p>
+</div>
+<div id="chapter1" class="border rounded border-info" >
+    <h2>Chapter 1</h2>
+    <h3>variables and Data</h3>
+    <p>Just like we follow some rules while speaking english (the grammar), we have some rules to follow while writing a javascipt program. The set of these rules is called syntax in javascipt.</p>
+    <h3>What is a variable?</h3>
+    <p>A variable is a container that stores a value. This is very similar to the containters used to store rice, water and oats (Treat this as analogy).</p>
+    <p>The value of a javascipt variable can be changed during the execution of the program.</p>
+    <pre><code class="code"> 
+        var a = 7;         
+        let a = 7;        
+        const a = 7;      
+    </code></pre>
+    <h3>Rules for changing variable names</h3>
+    <ul>
+        <li>Letters, digits, underscores & $ sign allowed</li>
+        <li>Must begin with a $, _ or a letter</li>
+        <li>javascipt reserved words cannot be used as a varible name</li>
+        <li>Harsh and haRsh are different varibles (case sensitive)  </li>
+    </ul>
+    <h3>var vs let in javascipt</h3>
+    <ol>
+        <li> "var" is globally scoped while "let" and "const" are block scoped. </li>
+        <li>"var" can be updated & re-declared within its scope.</li>
+        <li>"let" can be updated but not be re-declared.</li>
+        <li>"const" can neither be updated nor be re-declared</li>
+        <li>var variables are initialized with undefined whereas let and const variables are not initialized</li>
+        <li>const must be initialized during declaration unlike let and var</li>
+    </ol>
+<h3>Primitive Data types and Objects</h3>
+<p>Primitive data types are set of basic data types in javascript. <br> object is a non primitive datatype in javascript</p>
+<p>These are 7 primitive datatypes in javascipt</p>
+<ul>
+    <li>Null</li>
+    <li>Number</li>
+    <li>String</li>
+    <li>Symbol</li>
+    <li>Undefined</li>
+    <li>Boolean</li>
+    <li>BigInt</li>
+</ul>
+<h3>Object</h3>
+<p>An object in javascipt can be created as follows</p>
+<pre>
+    <code class="code">
+        const item = {                              
+            name: "leb bulbs",                      
+            price: "150",                           
+            color: "white"                          
+        }                                           
+    </code>
+</pre>
+<button class="exercise">
+<a href="#" >Attempt exercise</a>
+</button>
+</div>
+
+
+
+
+<div id="chapter2" class="border border-info rounded">
+  <h2>Chapter2</h2>
+ <P> A fragment of code that produces a value is called an expression. Every value written literally is an expression. for example :- 77 or "SHIVAM" </P>
+ <h3>Operation in javascipt</h3>
+ <div class="flex">
+<div id="div2" class="border border-info rounded"><h3>Arithemetic Operation</h3>
+  <p> "+" <span style="text-decoration:line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;</span> Addition <br> "-" &nbsp; <span style="text-decoration:line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;</span>Substraction <br> "*" <span style="text-decoration:line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;</span> Multiplication <br> "**" <span style="text-decoration:line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;</span> Exponential <br> "/" <span style="text-decoration:line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;</span> Division <br> "%" <span style="text-decoration:line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;</span> Modulus <br> "++" <span style="text-decoration:line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;</span> Increment <br> "--" <span style="text-decoration:line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;</span> Decrement </p>
+</div>
+<div id="div2" class="border border-info rounded">
+  <h3>Assignment operators</h3>
+  <ul>
+    <li> x = y  means x=y  </li>
+    <li> x += y means x = x+y</li>  
+    <li> x -= y means x = x - y </li>
+    <li> x *= y means x = x * y</li>
+    <li> x /= y means x = x / y</li>
+    <li> x %= y means x = x % y</li>
+    <li> x **= y means x = x ** y </li>
+  </ul> 
+</div>
+<div id="div2" class="border border-info rounded" >
+  <h3>Comparison Operations</h3>
+  <ul> 
+    <li>== &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;equal to </li> 
+    <li>!= &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; not equal to </li>
+    <li> ===&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; equal value & type </li>
+    <li> !== &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; not equal value or type</li>
+    <li> &gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater than</li>
+    <li> &lt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lesser than </li>
+    <li> &gt;= &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater than or equal to</li>
+    <li> &lt;= &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lesser than or equal to</li>
+    <li> ? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ternary operator</li>
+
+  </ul>
+</div>
+<div id="div2" class="border border-info rounded">
+  <h3>Logical operators</h3>
+  <ul>
+    <li> && &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; logical and</li>
+    <li> || &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; logical or</li>
+    <li> !  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; logical not</li>
+  </ul>
+</div>
+</div>
+<h3>Comment in javascipt</h3>
+<p>A comment in javascipt can be written as follow</p>
+<pre>
+  <code class="code">
+    let a = 2;       //This is a single line comment    
+    /* I am a                                           
+        multi-line comment                              
+                             */                         
+  </code>
+</pre>
+<h3>Conditional statements</h3>
+<p>In javascipt we have three forms of coditional statements</p>
+<ol>
+  <li>if statement</li>
+  <li>if... else statement</li>
+  <li> if ... else if ... else statement</li>
+</ol>
+<ol>
+  <h3><li>if statement</li></h3>
+  <p>The if statement in javascipt  looks like this:-</p> 
+  <pre>
+    <code class="code">
+      if (condition) {                            
+                      //executes the code         
+      }                                           
+    </code>
+  </pre>
+  <p>The  if statement evaluate the condition inside the (). If the condition is evaluated to true, the code inside the body of "if" is executed else the block of code is skipped</p>
+  <h3><li>if-else statement</li></h3>
+  <p>Sometimes, we might want to keep rechecking a set of conditions one by one until one matches. <br> syntax of if...else statement looks like this</p>
+  <pre>
+    <code class="code">
+      if (age > 0) {                             
+                     console.log("A valid age"); 
+                   }                             
+      else {                                     
+        console.log("This is invalid age");      
+      }                                          
+    </code>
+  </pre>
+  <h3><li>if...else-if...else statement</li></h3>
+  <p>syntax of if...else statement looks like this.</p>
+  <pre>
+    <code class="code">
+      if (age > 0) {                        
+        console.log("A valid age");         
+      }                                     
+      else if (age > 10 && age < 15) {      
+        console.log("but you are a kid");   
+      }                                     
+      else if (age > 15 ) {                 
+        console.log("Not a kid");           
+      }                                     
+      else {                                
+        console.log("invalid age")          
+      }                                     
+    </code>
+  </pre>
+</ol>
+<h3>Javascript ternary operator</h3>
+<p>evaluate a condition and execute a block of code based on the condition. <br>
+  syntax:- condition? expression1: expression2 . for example:-
+</p>
+<pre>
+  <code class="code">
+    let totalMarks = 100;                                                         
+    let marks = 45;                                                               
+    (marks > 30) ? console.log("You are passed"): console.log("You are failed")   
+  </code>
+</pre>
+<p>"You are passed" will be printed in console.</p>
+<button class="exercise">
+<a href="#" >Attempt exercise</a>
+</button>
+</div>
+
+<div id="chapter3" class="border border-info rounded" >
+<h2>Chapter 3</h2>
+<p>We use loops to perform repeated actions</p>
+<h3>The for loop</h3>
+<pre>
+  <code class="code">
+    for (statement1; statement2; statement3) {    
+      //code to be executed                       
+    }                                             
+  </code>
+</pre>
+<ul>
+  <li>statement 1 is executed one time</li>
+  <li>statement 2 is the condition based on which the loop runs.(loop body is executed)</li>
+  <li>statement 3 is executed everytime the loop body is executed</li>
+</ul>
+<h3>The for-in loop</h3>
+<pre>
+  <code class="code">
+    for(key in object) {                        
+                        //code to be executed   
+    }                                           
+  </code>
+</pre>
+<p> Note:- For-in loops also works, with arrays which will be discussed later </p>
+ <h3>The for-of loop</h3>
+ <pre>
+  <code class="code">
+    for (variable of iterable) {                      
+                                //code to be executed 
+    }                                                 
+  </code>
+ </pre>
+ <p>iterable means iterable data sturcture like arrays, strings, etc</p>
+ <h3>While loop</h3>
+ <pre>
+  <code class="code">
+    while (condition) {                   
+                  //code to be executed   
+    }                                     
+  </code>
+ </pre>
+ <p>If the condition never becomes false, the code never stop and may crash the run time.</p>
+ <h3>The do while loop</h3>
+ <p>The do while loop's syntax looks like this:-</p>
+ <pre>
+  <code class="code">
+    do { //code to be executed }    
+        while (condition)           
+  </code>
+ </pre>
+
+ <h3>Functions in javascipt</h3>
+ <p>a block of code designed to perform a particular task.</p>
+ <pre>
+  <code class="code">
+    myFunc(parameter1, parameter2) {                              
+                                      //code to be executed       
+                                                             }    
+    myFunc(7, 8);     //function invocation or calling            
+  </code>
+ </pre>
+ <p>Function invocation is a way to use the code inside the function. <br> A function can also return a value. The value is "returned" back to the caller</p>
+ <p>A modern way to declare a function is :-</p>
+ <pre>
+  <code class="code">
+    const sum = (a, b) => {                                           .
+                            let c = a+b;                               
+                            return c;                                  
+                                          }                            
+   let y = sum(1, 3);                                                  
+   console.log(y);           // 4 will be logged in the console.       
+  </code>
+ </pre>
+
+</div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
