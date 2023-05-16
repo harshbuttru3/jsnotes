@@ -39,12 +39,32 @@ button:hover{
 #div2{
     width: 45%;
    margin: 10px auto;
-   align-items: center;
+   /* align-items: center; */
 }
 #div2 h3{
     text-align: center;
 }
+
 .flex{
     display: flex;
     flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .border{
+        width: 98vw;
+        margin: 20px auto;
+        padding: 10px 10px;
+
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    #div2{
+        width: 60vw;
+    }
+
+
+
 }
