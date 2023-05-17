@@ -351,7 +351,7 @@
  </pre>
  <p>With template literals, it is possible to use both signel as well as double quotes inside a string. </p>
   <pre>
-    <code>
+    <code class="code">
       let a = `This is "my" House's Kitchen`
     </code>
   </pre>
@@ -362,7 +362,83 @@
     //prints this is Harsh      
   </code>
 </pre>
+<h3>Escape sequence characters</h3>
+<p>We can use single qutoes with escape sequence to solve the problem</p>
+<pre>
+  <code class="code">
+    let name = `Adam D\'Angelo'    
+  </code>
+</pre>
+<p>This will print " Adam D'Angleo' "</p>
+<p>similarly, we can use \" inside a string with double quotes</p>
+<ul>
+  <li>\n   for  newline</li>
+  <li>\t for Tab</li>
+  <li>\r for carriage return</li>
+</ul>
+<h3>String Properties and methods</h3>
+<pre>
+  <code class="code">
+    let name = "Harsh"       
+    name.length              
+  </code>
+</pre>
+<p> Gives 5 (number of characters in the string)</p>
+<pre>
+  <code class="code">
+    name.toUpperCase()        
+  </code>
+</pre>
+<p>Gives HARSH</p>
+<pre>
+  <code class="code">
+    name.toLowerCase()        
+  </code>
+</pre>
+<p>Gives harsh</p>
+<pre>
+  <code class="code">
+    name.slice(2)             
+  </code>
+</pre>
+<p>Prints "rsh" (from index 2 to end)</p>
+<pre>
+  <code class="code">
+    name.slice(2, 4)          
+  </code>
+</pre>
+<p>Prints "rs"(from index 2 to 4). <br> always remember index starts from 0</p>
+<pre>
+  <code class="code">
+    let name = "Harsh Bhai"                       
+    let newName = name.replace("Bhai", "Bhau")     
+  </code>
+</pre>
+<p>Replace "Bhai" with "Bhau" & store in newName variable</p>
+<pre>
+  <code class="code">
+    let name1 = "Harsh"                        
+    let name2 = "Harry"                       
+    let name3 = name1.concat(name2, "Yes")    
+  </code>
+</pre>
+<p>name stores HarshHarryYes <br> We can even use + operator</p>
+<pre>
+  <code class="code">
+    let name = "     Harry    "     s
+    let newName = name.trim()       s
+  </code>
+</pre>
+<p>removes white spaces <br> Strings are immutable, In order to access the character at an index we use following syntax</p>
 
+
+<pre>
+  <code class="code">
+ let name = "Harsh"          
+ name[0]       //Gives H     
+ name[1]       //Gives a     
+  </code>
+</pre>
 </div>
 
 
