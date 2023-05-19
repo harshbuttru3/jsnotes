@@ -44,7 +44,10 @@ button:hover{
 #div2 h3{
     text-align: center;
 }
-
+#div3{
+    width: 45%;
+    margin: 10px auto;
+}
 .flex{
     display: flex;
     flex-wrap: wrap;
