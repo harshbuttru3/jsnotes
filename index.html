@@ -494,11 +494,62 @@
   <h3><li>toString()</li></h3>
   <p>Converts an array to a string of comma seperated value.</p>
   <pre>
-    <code>
+    <code class="code">
       let n = [1,7,9]
       n.toString() //gives a string 1, 7, 9.
     </code>
   </pre>
+  <h3><li>join()</li></h3>
+  <p>Joins all the array elements using a seperator</p>
+  <pre>
+    <code class="code">
+      n.join("-") //gives 1-7-9
+      n.join("_") //gives 1_7_9
+    </code>
+  </pre>
+  <h3><li>pop()</li></h3>
+  <p>Removes last element from the array.</p>
+  <pre>
+    <code class="code">
+      let n = [1,2,4]
+      n.pop() 
+    </code>
+  </pre>
+  <p>Updates the original array, returns the popped value.</p>
+  <h3><li>push()</li></h3>
+  <p>Adds a new element at the end of the array</p>
+  <pre>
+    <code class="code">
+      let a = [7,2,1,8]
+      a.push(9)
+    </code>
+  </pre>
+  <p>Modifies the original array, returns the new array length.</p>
+  <h3><li>shift()</li></h3>
+  <p>Removes first element and returns it</p>
+  <h3><li>unshift()</li></h3>
+  <p>Adds element to the begining of the array and returns new array length</p>
+  <h3><li>delete</li></h3>
+  <p>Array element can be deleted using delete operator</p>
+  <pre>
+    <code class="code">
+      let d = [7,8,,9,10]
+      delete d[1]
+    </code>
+  </pre>
+<p>deletes the index 1 of the array d <br> NOTE :- delete is an operator</p>
+<h3><li>concat()</li></h3>
+<p>Used to join arrays to the given arrays</p>
+<pre>
+  <code class="code">
+    let a1 = [1,2,3]
+    let a2 = [4,5,6]
+    let a3 = [9,8,7]
+    a1.concat(a2,a3)
+  </code>
+</pre>
+<p>a1.concat(a2,a3) will return [1,2,3,4,5,6,9,8,7] <br> concat() returns a new array and doesn't change existing arrays.</p>
+
 </ol>
 </div>
 
